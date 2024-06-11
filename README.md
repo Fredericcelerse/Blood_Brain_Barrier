@@ -15,14 +15,14 @@ conda create -n bbb python=3.8
 ```
 
 Then we activate the conda environment:
-'''
+```
 conda activate bbb
-'''
+```
 
 Once the environment is properly created, we will install the python libraries we need to execute the code:
-'''
-conda install 
-'''
+```
+conda install -c conda-forge rdkit==2024.03.2 torch==2.1.2.post104 pandas==2.0.3 torch-scatter==2.1.2 pyg==2.5.3
+```
 
 ## Code architecture
 

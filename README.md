@@ -33,5 +33,5 @@ To execute the code, just enter the following command:
 python MPNN.py
 ```
 
-The progression of the learning will be printed for each epoch, with the Loss and Accuracy. At the end of the training, you can save the model through a XXX.pth name, which can be then load in another script using the same model architecture and the command "torch.load(XXX.pth)".
+The progression of the learning will be printed for each epoch, with the Loss and Accuracy. At the end of the training, you can save the model through a my_bbb_mpnn_model name, which can be then load in another script using the same model architecture and the command "torch.load(my_bbb_mpnn_model)".
 

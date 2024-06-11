@@ -1,9 +1,17 @@
 # Predicting the ability of small molecules to cross the Blood Brain Barrier
 This is a small tutorial on how we can use AI and Computational Chemistry to predict the ability of a small molecule to pass (or not) the Blood Brain Barrier.
 
-In this example, we developed a small Message Passing Neural Network that considered each molecule of the dataset as a graph, and learn using a vector made of atomic and bond properties. 
+In this example, we developed a small Message Passing Neural Network that considered each molecule of the dataset as a graph, and learns using a vector made of atomic and bond properties. 
 
-## Prerequists
+## Prerequisites
+
+### Prerequisites
+**Anaconda**: To execute the code, we will set up a specific environment using Anaconda. To install it, visit [Anaconda Installation](https://docs.anaconda.com/free/anaconda/install/).
+
+### Setup Conda Environment
+First, create the conda environment:
+```bash
+conda create -n bbb python=3.8
 
 ### Anaconda
 
@@ -34,10 +42,10 @@ The code is structured like this:
 The dataset is loaded using the pandas library and the SMILESDataSet class we defined in the code. This class aims at convert each SMILES into a graph, using the "atom_features" and "bond_features" functions we defined by using the rdkit pre-implemented functions. At the end, a graph is generated and stored for each of the molecule loaded from the BBB.csv file. 
 
 ### 2. Split the data
-As commonly done, the data are splitted randomly: 80% will be used for the training while 10% for the validation and 10% for the test. 
+As commonly done, the data are split randomly: 80% will be used for the training while 10% for the validation and 10% for the test. 
 
 ### 3. Initialize the model
-The model is initiliazed by defining our Message Passing Neural Network (MPNN) architecture. This part is one of the critical step when building a ML model as many hyperparameters can be optimized here. It will be seen in a future project on how to optimize hyperparameters.  
+The model is initialized by defining our Message Passing Neural Network (MPNN) architecture. This part is one of the critical steps when building a ML model as many hyperparameters can be optimized here. This will be explored in a future project on how to optimize hyperparameters.
 
 ### 4. Train the model
 The model is then trained using the "run_epoch" function and the performance is printed at the end. 
@@ -48,9 +56,9 @@ The model performance is finally evaluated on the test set, containing structure
 ### 6. Save the model after training
 The model is finally saved and can be used in future script for other predictions.
 
-This architecture is very standard and correspond to classical ML algorithms. 
+This architecture is standard and corresponds to classical ML algorithms.
 
-## Exectuing the code
+## Executing the code
 
 To execute the code, just enter the following command:
 ```

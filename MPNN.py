@@ -109,7 +109,7 @@ class SubsetData(Dataset):
 smiles_dataset = SMILESDataSet('BBBP.csv')
 
 # Create a DataLoader for training
-train_indices, val_indices, test_indices = split_data(smiles_dataset, train_ratio=0.8, val_ratio=0.2)
+train_indices, val_indices, test_indices = split_data(smiles_dataset, train_ratio=0.8, val_ratio=0.1)
 
 train_dataset = SubsetData(smiles_dataset, train_indices)
 val_dataset = SubsetData(smiles_dataset, val_indices)

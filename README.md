@@ -23,7 +23,7 @@ conda activate bbb
 
 Once the environment is properly created, we will install the python libraries we need to execute the code:
 ```
-conda install -c conda-forge rdkit=2024.03.2 pandas=2.0.3 
+conda install -c conda-forge rdkit pandas
 ```
 ```
 conda install -c pytorch pytorch

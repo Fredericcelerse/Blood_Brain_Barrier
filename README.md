@@ -28,6 +28,20 @@ conda install -c conda-forge rdkit==2024.03.2 torch==2.1.2.post104 pandas==2.0.3
 
 ## Code architecture
 
+The code is structured like this:
+
+### 1. Load the dataset
+
+### 2. Split the data
+
+### 3. Initialize the model
+
+### 4. Train the model
+
+### 5. Evaluate the performance of the model
+
+### 6. Save the model after training
+
 ## Exectuing the code
 
 To execute the code, just enter the following command:

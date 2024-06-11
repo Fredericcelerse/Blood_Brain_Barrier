@@ -31,16 +31,24 @@ conda install -c conda-forge rdkit==2024.03.2 torch==2.1.2.post104 pandas==2.0.3
 The code is structured like this:
 
 ### 1. Load the dataset
+The dataset is loaded using the pandas library and the SMILESDataSet class we defined in the code. This class aims at convert each SMILES into a graph, using the "atom_features" and "bond_features" functions we defined by using the rdkit pre-implemented functions. At the end, a graph is generated and stored for each of the molecule loaded from the BBB.csv file. 
 
 ### 2. Split the data
+As commonly done, the data are splitted randomly: 80% will be used for the training while 10% for the validation and 10% for the test. 
 
 ### 3. Initialize the model
+The model is initiliazed by defining our Message Passing Neural Network (MPNN) architecture. This part is one of the critical step when building a ML model as many hyperparameters can be optimized here. It will be seen in a future project on how to optimize hyperparameters.  
 
 ### 4. Train the model
+The model is then trained using the "run_epoch" function and the performance is printed at the end. 
 
 ### 5. Evaluate the performance of the model
+The model performance is finally evaluated on the test set, containing structures that were not used during the training and validation steps.
 
 ### 6. Save the model after training
+The model is finally saved and can be used in future script for other predictions.
+
+This architecture is very standard and correspond to classical ML algorithms. 
 
 ## Exectuing the code
 

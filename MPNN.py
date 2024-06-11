@@ -191,5 +191,5 @@ test_loss, test_auc = run_epoch(test_loader, is_train=False)
 print(f'Test Loss: {test_loss}, Test AUC: {test_auc}')
 
 # Save the model after training
-#torch.save(model.state_dict(), 'my_bbb_mpnn_model.pth')
-#print("Modèle sauvegardé.")
+torch.save(model.state_dict(), 'my_bbb_mpnn_model.pth')
+print("Model saved !")

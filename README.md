@@ -28,3 +28,10 @@ conda install -c conda-forge rdkit==2024.03.2 torch==2.1.2.post104 pandas==2.0.3
 
 ## Exectuing the code
 
+To execute the code, just enter the following command:
+```
+python MPNN.py
+```
+
+The progression of the learning will be printed for each epoch, with the Loss and Accuracy. At the end of the training, you can save the model through a XXX.pth name, which can be then load in another script using the same model architecture and the command "torch.load(XXX.pth)".
+

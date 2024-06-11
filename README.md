@@ -5,13 +5,9 @@ In this example, we developed a small Message Passing Neural Network that consid
 
 ## Prerequisites
 
-**Anaconda**: To execute the code, we will set up a specific environment using Anaconda. To install it, visit [Anaconda Installation](https://docs.anaconda.com/free/anaconda/install/).
-
-### Setup Conda Environment
-
 ### Anaconda
 
-To execute the code, we will setup a specific environment using anaconda. To install it, go to this webpage: https://docs.anaconda.com/free/anaconda/install/
+To execute the code, we will set up a specific environment using Anaconda. To install it, visit [Anaconda Installation](https://docs.anaconda.com/free/anaconda/install/).
 
 ### Setup conda environment
 

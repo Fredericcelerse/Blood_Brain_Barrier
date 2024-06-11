@@ -10,9 +10,9 @@ To execute the code, we will setup a specific environment using anaconda. To ins
 ### Setup conda environment
 
 We first create the conda environment: 
-'''
+```
 conda create -n bbb python=3.8
-'''
+```
 
 Then we activate the conda environment:
 '''

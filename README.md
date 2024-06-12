@@ -34,7 +34,7 @@ conda install -c pyg pyg pytorch-scatter
 
 ### Database
 
-The database used in this small project is named as B3DB comes from the article of Meng et al. (https://www.nature.com/articles/s41597-021-01069-5, github repository: https://github.com/theochem/B3DB). We took only the first 1058 molecules in our example, but this number should be increased for production way in the future.  
+The database used in this small project is named as BBBP comes from the article of Martins et al. ([https://www.nature.com/articles/s41597-021-01069-5](https://pubmed.ncbi.nlm.nih.gov/22612593/), github repository: [https://github.com/theochem/B3DB](https://github.com/andresilvapimentel/bbbp-explainer)).
 
 ## Code architecture
 
